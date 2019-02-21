@@ -1,0 +1,21 @@
+dist: xenial
+language: python
+python:
+   - 3.7
+
+notifications:
+  email: false
+  slack: chiefdataoffice:qYrTMXwF5yrGxVM7KrBWeIHC
+
+before_install:
+  - python setup.py install
+
+install:
+  - echo "install..."
+  - pip install -r requirements.txt
+
+script:
+  - echo "script..."
+  - git reset --soft ${TRAVIS_COMMIT_RANGE%...*} && git lint
+  - pytest -v -s tests/
+

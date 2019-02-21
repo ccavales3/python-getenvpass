@@ -1,0 +1,53 @@
+# Copyright 2013-2014 Sebastian Kreft
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Regular expression matchers like \d, \w, must be escaped as in \\d, \\w.
+# If you need to include a string like '{}' or '{foo}', you need to double the
+# braces, as in '{{}}' or '{{foo}}'. See the pylint configuration for an
+# example.
+
+# NOTE: filter are regular expressions, and for readability they are broken up
+# using '>-' line folding from YAML. This means that between each line a space
+# will be added.
+
+# Python
+pylint:
+  extensions:
+    - .py
+  command: pylint
+  arguments:
+    - --rcfile={DEFAULT_CONFIGS}/.pylintrc
+    - --output-format=text
+    - >-
+      --msg-template={{abspath}}:{{line}}:{{column}}:
+      [{{category}}:{{symbol}}] {{obj}}: {{msg}}
+    - --reports=n
+  filter: >-
+    ^{filename}:(?P<line>{lines}):((?P<column>\d+):)?
+    \[(?P<severity>.+):(?P<message_id>\S+)\]\s+(:
+    )?(?P<message>.+)$
+  installation: "Run pip install pylint."
+
+# Sample output:
+# package/module.py:68:80: E501 line too long (80 > 100 characters)
+pycodestyle:
+  extensions:
+    - .py
+  command: pycodestyle
+  arguments:
+    - "--max-line-length=100"
+  filter: >-
+    ^{filename}:(?P<line>{lines}):((?P<column>\d+):)?
+    (?P<message_id>\S+) (?P<message>.+)$
+  installation: "Run pip install pycodestyle."
