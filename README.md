@@ -4,7 +4,7 @@ The get_env_pass module returns the environment variable if is exists in the sys
 
 ## Installation
 
-`pip install python-getenvpass`
+`pip install get-env-pass`
 
 ## Usage
 
