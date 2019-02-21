@@ -7,7 +7,7 @@ Example:
 from setuptools import setup
 
 setup(name='get_env_pass',
-      version='0.0.1',
+      version='1.0.0',
       description='get-env-pass python package',
       url='https://github.ibm.com/cbcavale/python-getenvpass',
       author='Caesar Cavales',
