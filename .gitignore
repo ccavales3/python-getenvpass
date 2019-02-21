@@ -1,1 +1,4 @@
+build/
+dist/
+get_env_pass.egg-info/
 __pycache__/

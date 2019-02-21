@@ -9,7 +9,7 @@ from setuptools import setup
 setup(name='get_env_pass',
       version='0.0.1',
       description='get-env-pass python package',
-      url='',
+      url='https://github.ibm.com/cbcavale/python-getenvpass',
       author='Caesar Cavales',
       author_email='cbcavale@us.ibm.com',
       license='MIT',
