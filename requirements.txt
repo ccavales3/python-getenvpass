@@ -3,3 +3,4 @@ git-lint==0.1.2
 pycodestyle==2.4.0
 pylint==2.2.2
 pytest==4.1.1
+pytest-cov==2.6.1
