@@ -1,6 +1,7 @@
 # get_env_pass
 
 [![Build Status](https://travis.ibm.com/cbcavale/python-getenvpass.svg?token=mGx5k7KN97xvSwTeB9Ut&branch=master)](https://travis.ibm.com/cbcavale/python-getenvpass)
+![Coverage Report](./coverage.svg)
 
 The get_env_pass module returns the environment variable if is exists in the system running the module. If not, it prompts user for the value
 
