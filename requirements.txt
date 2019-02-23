@@ -1,4 +1,5 @@
 # Dev dependencies
+coverage-badge==0.2.0
 git-lint==0.1.2
 pycodestyle==2.4.0
 pylint==2.2.2
