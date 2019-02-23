@@ -18,4 +18,4 @@ script:
   - echo "script..."
   - git reset --soft ${TRAVIS_COMMIT_RANGE%...*} && git lint
   - pytest -v -s --cov tests/
-  - coverage-badge -o coverage.svg
+  - coverage-badge -o -f coverage.svg
