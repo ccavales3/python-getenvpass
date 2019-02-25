@@ -70,5 +70,5 @@ available at [http://contributor-covenant.org/version/1/4][version]
 [version]: http://contributor-covenant.org/version/1/4/
 
 ##### Maintainers
-[@cbcavale](https://github.ibm.com/cbcavale)
+[@ccavales3](https://github.com/ccavales3)
 
