@@ -4,8 +4,7 @@ python:
    - 3.7
 
 notifications:
-  email: false
-  slack: chiefdataoffice:qYrTMXwF5yrGxVM7KrBWeIHC
+  email: true
 
 before_install:
   - python setup.py install
@@ -17,5 +16,5 @@ install:
 script:
   - echo "script..."
   - git reset --soft ${TRAVIS_COMMIT_RANGE%...*} && git lint
-  - pytest -v -s tests/
-
+  - pytest -v -s --cov tests/
+  - coverage-badge -f -o coverage.svg
