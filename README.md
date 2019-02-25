@@ -2,16 +2,19 @@
 
 [![Build Status](https://travis-ci.org/ccavales3/python-getenvpass.svg?branch=master)](https://travis-ci.org/ccavales3/python-getenvpass)
 ![Coverage Report](./coverage.svg)
+[![HitCount](http://hits.dwyl.com/ccavales3/python-getenvpass.svg)](http://hits.dwyl.com/ccavales3/python-getenvpass)
 
 The get_env_pass module returns the environment variable if is exists in the system running the module. If not, it prompts user for the value
 
 ## Installation
 
-`pip install get-env-pass`
+```sh
+pip install get-env-pass
+```
 
 ## Usage
 
-```
+```python
 from get_env_pass import get_env_pass
 
 # Returns value if environment variable exists
