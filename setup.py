@@ -7,12 +7,12 @@ Example:
 from setuptools import setup
 
 setup(name='get_env_pass',
-      version='1.0.0',
+      version='1.0.1',
       description='get-env-pass python package',
       long_description='get-env-pass python package',
-      url='https://github.ibm.com/cbcavale/python-getenvpass',
+      url='https://github.com/ccavales3/python-getenvpass',
       author='Caesar Cavales',
-      author_email='cbcavale@us.ibm.com',
+      author_email='c.cavales3@gmail.com',
       license='MIT',
       packages=['get_env_pass'],
       zip_safe=False)
