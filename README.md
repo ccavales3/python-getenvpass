@@ -6,6 +6,8 @@
 
 The get_env_pass module returns the environment variable if is exists in the system running the module. If not, it prompts user for the value
 
+[pyPI](https://pypi.org/project/get-env-pass/)
+
 ## Installation
 
 ```sh
